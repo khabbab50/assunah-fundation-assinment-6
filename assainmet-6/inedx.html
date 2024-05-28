@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Md Khabbab Hossen" />
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Calculation Master</title>
+    <!-- link css file -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1>Calculation Master</h1>
+    </header>
+    <!-- calculator -->
+    <h2 class="title">arithmetic calculation</h2>
+    <section class="calculator-and-result-area">
+      <div id="calculators" class="calculators">
+        <!-- addition card -->
+        <div class="claculator card">
+          <div class="idia">
+            <h5>
+              addition <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula">number 1 + number 2</strong>
+          <div class="input">
+            <label for="additionInputNumber1">number 1 : </label>
+            <input type="number" id="additionInputNumber1" value="10" />
+            <br />
+            <label for="additionInputNumber2">number 2 : </label>
+            <input type="number" id="additionInputNumber2" value="20" />
+          </div>
+          <button id="addintion-buuton" class="addintion-buuton btn">
+            calculate
+          </button>
+        </div>
+        <!-- subtraction card -->
+        <div class="claculator card">
+          <div class="idia">
+            <h5>
+              subtraction <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula">number 1 - number 2</strong>
+          <div class="input">
+            <label for="subtractionNumber1">number 1 : </label>
+            <input type="number" id="subtractionNumber1" value="20" />
+            <br />
+            <label for="subtractionNumber2">number 2 : </label>
+            <input type="number" id="subtractionNumber2" value="10" />
+          </div>
+          <button id="subtraction-buuton" class="addintion-buuton btn">
+            calculate
+          </button>
+        </div>
+        <!-- division -->
+        <div class="claculator card">
+          <div class="idia">
+            <h5>
+              division <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula"
+            >number 1 <i class="fa-solid fa-divide"></i> number 2</strong
+          >
+          <div class="input">
+            <label for="divisionNumber1">number 1 : </label>
+            <input type="number" id="divisionNumber1" value="20" />
+            <br />
+            <label for="divisionNumber2">number 2 : </label>
+            <input type="number" id="divisionNumber2" value="10" />
+          </div>
+          <button id="division-buuton" class="addintion-buuton btn">
+            calculate
+          </button>
+        </div>
+        <!-- multiplication -->
+        <div class="claculator card">
+          <div class="idia">
+            <h5>
+              multiplication <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula">number 1 * number 2</strong>
+          <div class="input">
+            <label for="multiplicationNumber1">number 1 : </label>
+            <input type="number" id="multiplicationNumber1" value="5" />
+            <br />
+            <label for="multiplicationNumber2">number 2 : </label>
+            <input type="number" id="multiplicationNumber2" value="5" />
+          </div>
+          <button id="multiplication-buuton" class="multiplication-buuton btn">
+            calculate
+          </button>
+        </div>
+        <!-- calculate interest -->
+        <div class="claculator card">
+          <div class="idia">
+            <h5>
+              interest <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula">
+            (number 1 * number 2)
+            <i class="fa-solid fa-divide"></i> 100</strong
+          >
+          <div class="input">
+            <label for="interest1">number 1 : </label>
+            <input type="number" id="interest1" value="2000" />
+            <br />
+            <label for="interest2">number 2 : </label>
+            <input type="number" id="interest2" value="20" />
+          </div>
+          <button id="interest-buuton" class="multiplication-buuton btn">
+            calculate
+          </button>
+        </div>
+        <!-- remainder calculation -->
+        <div class="claculator card">
+          <div class="idia">
+            <h5>
+              remainder <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula"
+            >number 1 <i class="fa-solid fa-percent"></i> number 2</strong
+          >
+          <div class="input">
+            <label for="remainder1">number 1 : </label>
+            <input type="number" id="remainder1" value="10" />
+            <br />
+            <label for="remainder2">number 2 : </label>
+            <input type="number" id="remainder2" value="2" />
+          </div>
+          <button id="remainder-buuton" class="multiplication-buuton btn">
+            calculate
+          </button>
+        </div>
+      </div>
+      <div id="claculation-result" class="claculation-result">
+        <h2 id="result">Result is :000</h2>
+      </div>
+    </section>
+    <!-- Fahrenheit and Celsius -->
+    <h2 class="title">Fahrenheit and Celsius</h2>
+    <section class="farenheit-celsius-area">
+      <div class="farenheit-celsius-cards">
+        <div class="claculator card">
+          <div class="idia">
+            <h5>
+              Fahrenheit to Celsius <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula">(Fahrenheit − 32) × 5/9 = 0°C</strong>
+          <div class="input">
+            <label for="fcInput">Fahrenheit : </label>
+            <input type="number" id="fcInput" value="50" />
+          </div>
+          <button id="fcButton" class="fcButton-buuton btn">calculate</button>
+        </div>
+        <div class="claculator card">
+          <div class="idia">
+            <h5>
+              Celsius to Fahrenheit <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula">(Celsius × 9/5) + 32</strong>
+          <div class="input">
+            <label for="celsius">Celsius : </label>
+            <input type="number" id="celsius" value="10" />
+          </div>
+          <button id="celsius-buuton" class="celsius-buuton btn">
+            calculate
+          </button>
+        </div>
+      </div>
+      <!-- result -->
+      <div class="fcResult">
+        <h2 id="fcResult">Result is : 000</h2>
+      </div>
+    </section>
+    <!-- Area calculation -->
+    <h2 class="title">Area calculation</h2>
+    <section class="calculator-and-result-area" id="area-calculation">
+      <div id="calculators" class="calculators">
+        <!-- addition card -->
+        <div class="claculator card">
+          <div class="idia">
+            <h5>
+              area of Circle <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula circle-formula">π * r<sup>2</sup></strong>
+          <div class="input circle-input">
+            <label for="circleInput1">r : </label>
+            <input type="number" id="circleInput1" value="10" />
+            <select id="c-and-c">
+              <option>centimetre</option>
+            </select>
+          </div>
+          <button id="circle-buuton" class="addintion-buuton btn">
+            calculate
+          </button>
+        </div>
+        <!-- Area of Rectangle -->
+        <div class="claculator card rectangle">
+          <div class="idia">
+            <h5>
+              Area of Rectangle <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula">l * w</strong>
+          <div class="input">
+            <label for="rectangle-lenth">l : </label>
+            <input type="number" id="rectangle-lenth" value="10" />
+            <select>
+              <option>centimetre</option>
+            </select>
+            <br />
+            <label for="rectangle-width">w : </label>
+            <input type="number" id="rectangle-width" value="10" />
+            <select>
+              <option>centimetre</option>
+            </select>
+          </div>
+          <button id="rectangle-buuton" class="addintion-buuton btn">
+            calculate
+          </button>
+        </div>
+        <!-- Area of Square -->
+        <div class="claculator card square">
+          <div class="idia">
+            <h5>
+              Area of Square <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula">a<sup>2</sup></strong>
+          <div class="input">
+            <label for="square-input">a : </label>
+            <input type="number" id="square-input" value="10" />
+            <select>
+              <option>centimetre</option>
+            </select>
+          </div>
+          <button id="square-buuton" class="addintion-buuton btn">
+            calculate
+          </button>
+        </div>
+        <!-- Area of Triangle -->
+        <div class="claculator card triangle">
+          <div class="idia">
+            <h5>
+              Area of Triangle <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula"
+            >1 <i class="fa-solid fa-divide"></i> 2 * b * h</strong
+          >
+          <div class="input">
+            <label for="triangle-input1">b : </label>
+            <input type="number" id="triangle-input1" value="5" />
+            <select>
+              <option>centimetre</option>
+            </select>
+            <br />
+            <label for="triangle-input2">h : </label>
+            <input type="number" id="triangle-input2" value="5" />
+            <select>
+              <option>centimetre</option>
+            </select>
+          </div>
+          <button id="priangle-buuton" class="multiplication-buuton btn">
+            calculate
+          </button>
+        </div>
+        <!-- Area of Parallelogram  -->
+        <div class="claculator card parallelogram">
+          <div class="idia">
+            <h5>
+              Area of Parallelogram <br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula">b * h</strong>
+          <div class="input">
+            <label for="parallelogram-input1">b : </label>
+            <input type="number" id="parallelogram-input1" value="10" />
+            <select>
+              <option>centimetre</option>
+            </select>
+            <br />
+            <label for="parallelogram-input2">h : </label>
+            <input type="number" id="parallelogram-input2" value="20" />
+            <select>
+              <option>centimetre</option>
+            </select>
+          </div>
+          <button id="parallelogram-buuton" class="multiplication-buuton btn">
+            calculate
+          </button>
+        </div>
+        <!-- Area of Rhombus  -->
+        <div class="claculator card rhombus">
+          <div class="idia">
+            <h5>
+              Area of Rhombus<br />
+              calculation
+            </h5>
+          </div>
+          <strong class="fomula">(1/2) * (d1 * d2)</strong>
+          <div class="input">
+            <label for="rhombus-input1">d 1 : </label>
+            <input type="number" id="rhombus-input1" value="10" />
+            <select>
+              <option>centimetre</option>
+            </select>
+            <br />
+            <label for="rhombus-input2">d 2 : </label>
+            <input type="number" id="rhombus-input2" value="20" />
+            <select>
+              <option>centimetre</option>
+            </select>
+          </div>
+          <button id="rhombus-buuton" class="multiplication-buuton btn">
+            calculate
+          </button>
+        </div>
+      </div>
+      <div id="area-calculation-result" class="claculation-result">
+        <h2 id="result">Result is :000</h2>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <h5 id="footer-text"></h5>
+    </footer>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/bc02ba23a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link javaScript file -->
+    <script src="./script.js"></script>
+  </body>
+</html>
